@@ -1,0 +1,60 @@
+{% load static %}
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <script src="{% static 'main/js/learn.js' %}"></script>
+    <script async src="https://cse.google.com/cse.js?cx=73e3b9acba5e7020f"></script>
+    <div class="page">
+        <header class="header">
+            <div class="header-logo">
+                <div class="header-logo-text">Justburntheworld.com</div>
+                <div class="google-text">
+                    <div class="gcse-searchbox-only"></div>
+                </div>
+            </div>
+        </header>
+        <div class="header-sidebar">
+            <div class="slash-sidebar"></div>
+            <a href="/"  class="header-link">Новости</a>
+            <a href="Mems"  class="header-link">Мемы</a>
+            <a href="HistoryCharacter" class="header-link">Исторические личности</a>
+            <div class="slash-sidebar"></div>
+
+        </div>
+        <div class="content">
+            <div class="leftbar">
+                <div class="leftbar-content">
+                    <h1 class="leftbar-title">Тут могла быть очень важная информация</h1>
+                    <p class="leftbar-text">Но тут буду я, ДИО</p>
+                    <img class="dio" src="{% static 'main/img/dio1.jpg' %}">
+                    <img class="dio" src="{% static 'main/img/dio2.jpg' %}">
+                    <img class="dio2" src="{% static 'main/img/dio3.jpg' %}">
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="content-text-block">
+                    {% block content %}{% endblock %}
+                </div>
+
+            </div>
+            <div class="right-bar">dsad</div>
+        </div>
+        <aside class="sidebar"></aside>
+        <footer class="footer"></footer>
+
+    </div>
+
+
+
+</body>
+</html>
